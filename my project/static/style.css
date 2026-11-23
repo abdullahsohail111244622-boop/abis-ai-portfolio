@@ -1,6 +1,6 @@
 /* ==========================================
    M. ABIS SULTAN | AI ENGINEER
-   PREMIUM PORTFOLIO STYLESHEET
+   PREMIUM RESPONSIVE PORTFOLIO
 ========================================== */
 
 :root {
@@ -67,11 +67,9 @@ button {
     position: sticky;
     top: 0;
     z-index: 1000;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background: rgba(8, 11, 20, 0.9);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border);
@@ -149,7 +147,6 @@ button {
     gap: 40px;
     position: relative;
     overflow: hidden;
-
     background:
         radial-gradient(ellipse at 75% 40%, rgba(0, 229, 255, .12), transparent 35%),
         radial-gradient(ellipse at 95% 20%, rgba(165, 107, 255, .12), transparent 35%),
@@ -168,7 +165,7 @@ button {
 }
 
 .hero-content {
-    max-width: 680px;
+    max-width: 720px;
     position: relative;
     z-index: 2;
 }
@@ -210,14 +207,17 @@ button {
     font-weight: 700;
     letter-spacing: 3px;
     color: var(--muted);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+/* LARGE NAME HEADLINE */
 
 .hero h1 {
     font-family: var(--heading);
-    font-size: clamp(43px, 6vw, 76px);
-    line-height: 1.13;
-    letter-spacing: -3px;
+    font-size: clamp(65px, 8vw, 110px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -4px;
     margin-bottom: 22px;
 }
 
@@ -743,10 +743,6 @@ button {
     margin-bottom: 18px;
 }
 
-.project-info .text-link {
-    margin-top: 20px;
-}
-
 .project-note {
     text-align: center;
     max-width: 750px;
@@ -785,9 +781,9 @@ button {
 }
 
 .contact-email {
-    margin-top: 22px;
-    color: var(--cyan);
-    font-size: 12px;
+    margin-top: 22px !important;
+    color: var(--cyan) !important;
+    font-size: 12px !important;
 }
 
 
@@ -841,6 +837,10 @@ button {
 
     .hero-visual {
         transform: scale(.85);
+    }
+
+    .hero h1 {
+        font-size: clamp(55px, 7vw, 85px);
     }
 
     .expertise-grid {
@@ -900,7 +900,8 @@ button {
     }
 
     .hero h1 {
-        font-size: clamp(42px, 9vw, 60px);
+        font-size: clamp(48px, 9vw, 68px);
+        letter-spacing: -2px;
     }
 
     .hero-visual {
@@ -945,7 +946,7 @@ button {
     }
 
     .hero h1 {
-        font-size: 41px;
+        font-size: 46px;
         letter-spacing: -1.5px;
     }
 
@@ -967,6 +968,7 @@ button {
         transform-origin: center;
         align-self: center;
         margin: -20px 0 -45px;
+        max-width: 100%;
     }
 
     .expertise-grid,
@@ -1009,6 +1011,8 @@ button:focus-visible {
     }
 
 }
+
+
 /* SCROLL REVEAL */
 
 .reveal {
